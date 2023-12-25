@@ -20,7 +20,7 @@ export class CapitalizadoPipe implements PipeTransform {
       });
       // console.log({ nombres });
     } else {
-      nombres[0] = nombres[0][0].toUpperCase() + nombres[0].substr(1);
+      nombres[0] = nombres[0][0].toUpperCase() + nombres[0].substring(1);
     }
     return nombres.join(' ');
   }
