@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   public nombre: string = 'Capitán América';
+  public nombre2: string = 'jUaN pAbLo';
   public arreglo = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
   public PI: number = Math.PI;
   public porcentaje: number = 0.234;
@@ -28,4 +29,15 @@ export class AppComponent {
   });
 
   public fecha: Date = new Date();
+  public idioma: string = 'es';
+  public videoUrl: string = 'https://www.youtube.com/embed/fSKQRDq3RkM?si=k0gfhdGgMfqU9zFA';
+  public activar: boolean = true;
+
+  changeIdioma(idioma: any) { 
+    this.idioma = idioma;
+  }
+
+  ocultarMostrar() {
+    this.activar = !this.activar;
+  }
 }
